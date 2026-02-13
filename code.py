@@ -5,9 +5,9 @@ user = input("Guess the Number")
 
 while user != "guess":
     guess = input("guess a number from 1 to 10")
-    if guess < "5":
-        print(guess, "incorrect")
-    elif guess == "5" :
+    if guess == "5":
+        print(guess, "correct")
+    elif guess < "5" :
         print(guess, "incorrect go higher")
 
 

@@ -12,7 +12,7 @@ while user1 != int(guess):
     user1=int(input("Guess the Number:"))
     your_guesses.append (user1)
     if user1 == int(guess):
-        print("The Number is", guess) 
+        print("Congrats its", guess) 
         for your_guesses in your_guesses:
             print("Your guesses are", your_guesses)
     else:
