@@ -10,12 +10,14 @@ your_guesses=[]
 user1= ""
 while user1 != int(guess):
     user1=int(input("Guess the Number:"))
-    incorrect.append (user1)
+    your_guesses.append (user1)
     if user1 == int(guess):
         print("The Number is", guess) 
-        print("Your guesses are", incorrect)
+        for your_guesses in your_guesses:
+            print("Your guesses are", your_guesses)
     else:
-        print ("incorrect")
+        print ("wrong")
         if int(guess) > int(5):
             print("go higher")
-        else: print("lower")
+        else: 
+            print("lower")
